@@ -13,11 +13,11 @@ import (
 var stringArray []string
 
 func Main() {
-	readTestAbsolut()
-	readTestFlag()
-	readTestChunks()
+	//readTestAbsolut()
+	//readTestFlag()
+	//readTestChunks()
 	readTestLinebyLine()
-	printArray()
+	//printArray()
 }
 func readTestAbsolut() {
 	data, err := ioutil.ReadFile("F:/ASH_Programmierung/20210215/datavis/filehandling/test.txt")
@@ -79,7 +79,7 @@ func readTestLinebyLine() []string {
 	}()
 	s := bufio.NewScanner(f)
 	for s.Scan() {
-		fmt.Println(s.Text())
+		//fmt.Println(s.Text())
 		stringArray = append(stringArray, s.Text())
 	}
 	err = s.Err()

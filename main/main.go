@@ -6,6 +6,7 @@ import (
 
 	"example.com/data"
 	"example.com/filehandling"
+	"example.com/mysql"
 	"example.com/types"
 	"github.com/gofiber/fiber/v2"
 )
@@ -19,6 +20,10 @@ func main() {
 	//Standard aufrufe
 	data.Main()
 	filehandling.Main()
+
+	fmt.Println("mySQL Start")
+	mysql.Main()
+	fmt.Println("mySQL Ende")
 
 	app := fiber.New()
 	// app Foo
