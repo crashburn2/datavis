@@ -11,6 +11,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {HttpClientModule} from '@angular/common/http';
 import { HttpComponent } from './http/http.component';
+import { DataComponent } from './data/data.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HttpComponent } from './http/http.component';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    HttpComponent
+    HttpComponent,
+    DataComponent
 
   ],
   imports: [

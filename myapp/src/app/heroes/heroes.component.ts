@@ -8,6 +8,10 @@ import { HeroService } from '../hero.service';
   styleUrls: ['./heroes.component.scss']
 })
 export class HeroesComponent implements OnInit {
+  constructor(
+    private heroService: HeroService) {
+    this.subscribeToHeroes();
+  }
 
   heroes: Hero[] | undefined;
 
@@ -16,10 +20,7 @@ export class HeroesComponent implements OnInit {
     heroObservable.subscribe(heroes => this.heroes = heroes)
   }
 
-  constructor(
-    private heroService: HeroService) {
-    this.subscribeToHeroes();
-  }
+
 
   async getHeroes(): Promise<Hero[] | undefined> {
     var privateHeroes: Hero[] | undefined

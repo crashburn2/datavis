@@ -5,6 +5,7 @@ import (
 	"log"
 
 	"example.com/data"
+	"example.com/filehandling"
 	"example.com/types"
 	"github.com/gofiber/fiber/v2"
 )
@@ -17,6 +18,7 @@ const (
 func main() {
 	//Standard aufrufe
 	data.Main()
+	filehandling.Main()
 
 	app := fiber.New()
 	// app Foo
@@ -36,8 +38,13 @@ func main() {
 		return c.JSON(a)
 	})
 
+	app.Get("/api/file", func(c *fiber.Ctx) error {
+		return c.JSON(filehandling.GiveFileAsStringArray())
+	})
+
 	log.Fatal(app.Listen(":3000"))
 
 	message := data.Hello("Gladys")
 	fmt.Print(message)
+
 }
