@@ -11,12 +11,14 @@ import { catchError, map, tap } from 'rxjs/operators';
 export class HeroService {
 
   heroes: Hero[] = new Array();
+  data: string[] = new Array();
 
   constructor(
     private messageService: MessageService,
     private http: HttpClient) { }
 
   private heroesUrl = 'api/heroes'
+  private dataUrl = 'api/file'
   private log(message: string) {
     this.messageService.add(`HeroService: ${message}`)
   }
@@ -25,6 +27,10 @@ export class HeroService {
     this.getHeroes().subscribe(heroes => this.heroes = heroes);
     console.log("Init Hero Service heroes Array: ", this.heroes);
     this.messageService.add("Init Hero Service heroes Array");
+
+    this.getData().subscribe(data => this.data = data);
+    console.log("Init Data Service data Array: ", this.data);
+    this.messageService.add("Init Data Service data Array");
   }
 
   /** GET heroes from the server */
@@ -33,6 +39,15 @@ export class HeroService {
       .pipe(
         tap(_ => console.log('fetched heroes')),
         catchError(this.handleError<Hero[]>('getHeroes', []))
+      );
+  }
+
+   /** GET Data from the server */
+   getData(): Observable<string[]> {
+    return this.http.get<string[]>(this.dataUrl)
+      .pipe(
+        tap(_ => console.log('fetched data')),
+        catchError(this.handleError<string[]>('getStrings', []))
       );
   }
 
