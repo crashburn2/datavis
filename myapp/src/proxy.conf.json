@@ -4,12 +4,7 @@
       "secure": false,
       "changeOrigin": true
     },
-    "/api/heroes": {
-      "target": "http://localhost:3000",
-      "secure": false,
-      "changeOrigin": true
-    },
-    "/api/file": {
+    "/api/*": {
       "target": "http://localhost:3000",
       "secure": false,
       "changeOrigin": true

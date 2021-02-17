@@ -1,9 +1,18 @@
-<h2>My Heroes</h2>
+<div class="p-grid">
+  <div class="p-col">
+    <h2>My Heroes</h2>
+  </div>
+</div>
 
-<ul class="heroes" *ngIf="!!heroes">
-  <li *ngFor="let hero of heroes">
-    <a routerLink="/detail/{{hero.id}}">
-      <span class="badge">{{hero.id}}</span><span class="xyz">{{hero.name}}</span>
-    </a>
-  </li>
-</ul>
+
+<div class="p-grid">
+  <div class="p-col">
+    <ul class="heroes" *ngIf="!!heroes">
+      <li *ngFor="let hero of heroes">
+        <a routerLink="/detail/{{hero.id}}">
+          <span class="badge">{{hero.id}}</span><span class="xyz">{{hero.name}}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
