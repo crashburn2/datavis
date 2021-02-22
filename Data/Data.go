@@ -1,12 +1,125 @@
 package data
 
 import (
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"math/rand"
+	"os"
+	"sync"
 	"time"
 
-	"example.com/types"
+	types "automation-gmbh.com/datavis/Types"
+
+	"github.com/pkg/errors"
 )
+
+type Storage struct {
+	lock  sync.Mutex
+	id    int
+	heros map[int]*types.Hero
+}
+
+func NewStorage() *Storage {
+	return &Storage{
+		heros: make(map[int]*types.Hero),
+	}
+}
+
+func (storage *Storage) Load(fpath string) error {
+	storage.lock.Lock()
+	defer storage.lock.Unlock()
+
+	f, err := os.Open(fpath)
+	if err != nil {
+		return errors.Wrapf(err, "fail to open storage from [ %s ]", fpath)
+	}
+	defer f.Close()
+
+	data, err := ioutil.ReadAll(f)
+	if err != nil {
+		return errors.Wrapf(err, "fail to read storage from [ %s ]", fpath)
+	}
+
+	err = json.Unmarshal(data, &storage.heros)
+	if err != nil {
+		return errors.Wrapf(err, "fail to unmarschal heros from storage [ %s ]", fpath)
+	}
+
+	return nil
+}
+
+func (storage *Storage) AllHeros() []*types.Hero {
+	storage.lock.Lock()
+	defer storage.lock.Unlock()
+
+	list := make([]*types.Hero, 0)
+
+	for _, hero := range storage.heros {
+		list = append(list, hero)
+	}
+
+	return list
+}
+
+func (storage *Storage) GetHero(id int) *types.Hero {
+	storage.lock.Lock()
+	defer storage.lock.Unlock()
+
+	return storage.heros[id]
+}
+
+func (storage *Storage) RemoveHero(id int) {
+	storage.lock.Lock()
+	defer storage.lock.Unlock()
+
+	delete(storage.heros, id)
+}
+
+func (storage *Storage) UpdateHero(hero *types.Hero) {
+	storage.lock.Lock()
+	defer storage.lock.Unlock()
+
+	storage.heros[hero.Id] = hero
+}
+
+func (storage *Storage) NextId() int {
+	storage.lock.Lock()
+	defer storage.lock.Unlock()
+
+	for {
+		id := storage.id
+		storage.id = id + 1
+
+		_, ok := storage.heros[id]
+		if !ok {
+			return id
+		}
+	}
+}
+
+func (storage *Storage) Save(fpath string) error {
+	storage.lock.Lock()
+	defer storage.lock.Unlock()
+
+	f, err := os.Create(fpath)
+	if err != nil {
+		return errors.Wrapf(err, "fail to create storage file [ %s ]", fpath)
+	}
+	defer f.Close()
+
+	data, err := json.Marshal(storage.heros)
+	if err != nil {
+		return errors.Wrapf(err, "fail to marschal heros to storage file [ %s ]", fpath)
+	}
+
+	_, err = f.Write(data)
+	if err != nil {
+		return errors.Wrapf(err, "fail write to storage file [ %s ]", fpath)
+	}
+
+	return nil
+}
 
 var namen []string
 var elements []string

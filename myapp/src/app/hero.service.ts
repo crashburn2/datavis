@@ -42,8 +42,8 @@ export class HeroService {
       );
   }
 
-   /** GET Data from the server */
-   getData(): Observable<string[]> {
+  /** GET Data from the server */
+  getData(): Observable<string[]> {
     return this.http.get<string[]>(this.dataUrl)
       .pipe(
         tap(_ => console.log('fetched data')),
@@ -51,27 +51,24 @@ export class HeroService {
       );
   }
 
-  getHero(id: number | undefined): Observable<Hero | undefined> {
+  getHero(id: number | undefined): Promise<Hero> {
     //const url = `${this.heroesUrl}/${id}`;
-    const url = `/detail/${id}`
-    this.getHeroes().subscribe(heroes => this.heroes = heroes);
+    const url = `/api/hero/${id}`
 
     // TODO: send the message _after_ fetching the hero
     if (id) {
       this.messageService.add(`HeroService: fetched hero id=${id}`);
     }
-    var pickedHero: Hero | undefined = this.heroes.find(hero => hero.id === id);
 
-    console.log("Ein Held wurde geklickt")
-    console.log("id:", id)
-    console.log(pickedHero)
-    console.log(this.heroes)
-    return of(this.heroes.find(hero => hero.id === id));
-    
     return this.http.get<Hero>(url).pipe(
       tap(_ => this.log(`fetched hero id =${id}`)),
       catchError(this.handleError<Hero>(`getHero id=${id}`))
-      );
+    ).toPromise();
+  }
+
+  async putHero(hero: Hero): Promise<void> {
+    const url: string = `/api/hero/${hero.id}`
+    await this.http.put<Hero>(url, hero).toPromise()
 
   }
   /**

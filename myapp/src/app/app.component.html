@@ -6,13 +6,32 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<h1>{{title}}</h1>
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/heroes">Heroes</a>
-  <a routerLink="/http">Http</a>
-  <a routerLink="/data">Data</a>
-</nav>
-<router-outlet></router-outlet>
-<!--<app-heroes></app-heroes> -->
-<app-messages></app-messages>
+<div class="p-grid">
+  <div class="p-col">
+    <h1>{{title}}</h1>
+  </div>
+</div>
+
+<div class="p-grid">
+  <div class="p-col">
+    <nav>
+      <a routerLink="/dashboard">Dashboard</a>
+      <a routerLink="/heroes">Heroes</a>
+      <a routerLink="/http">Http</a>
+      <a routerLink="/data">Data</a>
+    </nav>
+  </div>
+</div>
+
+<div class="p-grid">
+  <div class="p-col">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<div class="p-grid">
+  <div class="p-col">
+    <!--<app-heroes></app-heroes> -->
+    <app-messages></app-messages>
+  </div>
+</div>

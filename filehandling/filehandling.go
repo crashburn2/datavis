@@ -19,8 +19,9 @@ func Main() {
 	readTestLinebyLine()
 	printArray()
 }
+
 func readTestAbsolut() {
-	data, err := ioutil.ReadFile("F:/ASH_Programmierung/20210215/datavis/filehandling/test.txt")
+	data, err := ioutil.ReadFile("filehandling/test.txt")
 	if err != nil {
 		fmt.Println("File reading error", err)
 		return
@@ -29,7 +30,7 @@ func readTestAbsolut() {
 }
 
 func readTestFlag() {
-	fptr := flag.String("fpath2", "F:/ASH_Programmierung/20210215/datavis/filehandling/test.txt", "file path to read from")
+	fptr := flag.String("fpath2", "filehandling/test.txt", "file path to read from")
 	flag.Parse()
 	data, err := ioutil.ReadFile(*fptr)
 	if err != nil {
@@ -40,7 +41,7 @@ func readTestFlag() {
 }
 
 func readTestChunks() {
-	fptr := flag.String("fpath", "F:/ASH_Programmierung/20210215/datavis/filehandling/test.txt", "file path to read from")
+	fptr := flag.String("fpath", "filehandling/test.txt", "file path to read from")
 	flag.Parse()
 
 	f, err := os.Open(*fptr)
@@ -65,7 +66,7 @@ func readTestChunks() {
 }
 
 func readTestLinebyLine() []string {
-	fptr := flag.String("fpath3", "F:/ASH_Programmierung/20210215/datavis/filehandling/test.txt", "file path to read from")
+	fptr := flag.String("fpath3", "filehandling/test.txt", "file path to read from")
 	flag.Parse()
 
 	f, err := os.Open(*fptr)

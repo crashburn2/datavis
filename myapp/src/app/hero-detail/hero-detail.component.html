@@ -1,22 +1,73 @@
-<h2>Hero details:</h2>
-<div *ngIf="hero">
-  <h2>{{hero.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{hero.id}}</div>
-  <div><span>name: </span>{{hero.name}}</div>
-  <div><span>Element: </span>{{hero.element}}</div>
-  <div><span>Kann fliegen: </span>{{hero.kannFliegen}}</div>
-  <div><span>Magie: </span>{{hero.magie}}</div>
-  
-  <div>
-    <label>name:
-      <input [(ngModel)]="hero.name" placeholder="name" />
-    </label>
+<div class="p-grid">
+  <div class="p-col">
+    <h2>Hero details:</h2>
   </div>
 </div>
-<div *ngIf="!hero&&heroId">
-  <h2>No Hero found with id={{heroId}}</h2>
+
+<div class="p-grid" *ngIf="hero">
+  <div class="p-col-4">
+
+    <div class="p-grid">
+      <div class="p-col">
+        ID
+      </div>
+      <div class="p-col">
+        {{hero.id}}
+      </div>
+    </div>
+    <div class="p-grid">
+      <div class="p-col">
+        Name
+      </div>
+      <div class="p-col">
+        <input type="text" pInputText [(ngModel)]="hero.name" />
+      </div>
+    </div>
+    <div class="p-grid">
+      <div class="p-col">
+        Element
+      </div>
+      <div class="p-col">
+        {{hero.element}}
+      </div>
+    </div>
+    <div class="p-grid">
+      <div class="p-col">
+        Kann fliegen:
+      </div>
+      <div class="p-col">
+        <p-checkbox [(ngModel)]="hero.kannFliegen" [binary]="true"></p-checkbox>        
+      </div>
+    </div>
+    <div class="p-grid">
+      <div class="p-col">
+        Magie
+      </div>
+      <div class="p-col">
+        <input type="number" pInputText [(ngModel)]="hero.magie" />
+      </div>
+    </div>
+
+    <div class="p-grid">
+      <div class="p-col">
+        <span class="p-buttonset">
+          <button pButton (click)="goBack()" label="go back" class="p-button-warning" icon="pi pi-arrow-left"></button>
+          <button pButton (click)="save()" label="save" class="p-button-success" icon="pi pi-save" ></button>
+        </span>
+      </div>
+    </div>
+
+  </div>
 </div>
-<div *ngIf="!hero&&!heroId">
-  <h2>No Id found</h2>
+
+<div class="p-grid" *ngIf="!hero&&heroId">
+  <div class="p-col">
+    <h2>No Hero found with id={{heroId}}</h2>
+  </div>
 </div>
-<button (click)="goBack()">go back</button>
+
+<div class="p-grid" *ngIf="!hero&&!heroId">
+  <div class="p-col">
+    <h2>No Id found</h2>
+  </div>
+</div>
