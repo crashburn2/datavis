@@ -18,15 +18,16 @@ const (
 
 func main() {
 	//Standard aufrufe
+	data.Main()
 	storage := data.NewStorage()
 
-	fpath := "storage.json"
+	fpath := "../storage.json"
 
 	err := storage.Load(fpath)
 	if err != nil {
 		log.Fatal(err)
 	}
-
+	storage.AddNewRndHero(5)
 	app := fiber.New()
 
 	app.Get("/api/file", func(c *fiber.Ctx) error {

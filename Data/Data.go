@@ -83,6 +83,18 @@ func (storage *Storage) UpdateHero(hero *types.Hero) {
 	storage.heros[hero.Id] = hero
 }
 
+func (storage *Storage) AddNewRndHero(number int) {
+	hero := &types.Hero{}
+
+	for i := 0; i < number; i++ {
+		hero = GiveHero()
+		fmt.Println("Ein Held wird erschaffen", hero)
+		storage.UpdateHero(hero)
+	}
+	fmt.Println(storage.heros)
+
+}
+
 func (storage *Storage) NextId() int {
 	storage.lock.Lock()
 	defer storage.lock.Unlock()
@@ -137,8 +149,8 @@ func Hello(name string) string {
 	return message
 }
 
-func GiveHero() types.Hero {
-	h := types.Hero{}
+func GiveHero() *types.Hero {
+	h := &types.Hero{}
 	h.Id = rand.Intn(len(namen) + 1)
 	h.Name = namen[rand.Intn(len(namen)+1)]
 	h.Elements = elements[rand.Intn(len(elements))]

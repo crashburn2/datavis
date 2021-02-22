@@ -1,1 +1,58 @@
-{"1":{"id":1,"name":"Peter","element":"wasser","kannFliegen":false,"magie":12},"2":{"id":2,"name":"Test2","element":"wasser","kannFliegen":false,"magie":12},"3":{"id":3,"name":"foo","element":"wasser","kannFliegen":true,"magie":12}}
+{
+    "1": {
+        "id": 1,
+        "name": "Peter2",
+        "element": "wasser",
+        "kannFliegen": false,
+        "magie": 12
+    },
+    "113": {
+        "id": 113,
+        "name": "\tAlbert\t",
+        "element": "Erde",
+        "kannFliegen": true,
+        "magie": 17
+    },
+    "2": {
+        "id": 2,
+        "name": "Test2",
+        "element": "wasser",
+        "kannFliegen": false,
+        "magie": 12
+    },
+    "3": {
+        "id": 3,
+        "name": "foo",
+        "element": "wasser",
+        "kannFliegen": true,
+        "magie": 12
+    },
+    "356": {
+        "id": 356,
+        "name": "\tPierre\t",
+        "element": "Erde",
+        "kannFliegen": false,
+        "magie": 43
+    },
+    "647": {
+        "id": 647,
+        "name": "\tMiguel\t",
+        "element": "Luft",
+        "kannFliegen": false,
+        "magie": 42
+    },
+    "781": {
+        "id": 781,
+        "name": "\tLevi\t",
+        "element": "Licht",
+        "kannFliegen": true,
+        "magie": 12
+    },
+    "971": {
+        "id": 971,
+        "name": "\tMila\t",
+        "element": "Wasser",
+        "kannFliegen": false,
+        "magie": 0
+    }
+}
