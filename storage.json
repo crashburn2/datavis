@@ -13,12 +13,131 @@
         "kannFliegen": true,
         "magie": 17
     },
+    "114": {
+        "id": 114,
+        "name": "\tFatima\t",
+        "element": "Feuer",
+        "kannFliegen": true,
+        "magie": 3
+    },
+    "116": {
+        "id": 116,
+        "name": "\tAaliyah\t",
+        "element": "Luft",
+        "kannFliegen": true,
+        "magie": 6
+    },
+    "137": {
+        "id": 137,
+        "name": "\tKuzey\t",
+        "element": "Licht",
+        "kannFliegen": true,
+        "magie": 23
+    },
+    "138": {
+        "id": 138,
+        "name": "\tCan\t",
+        "element": "Wasser",
+        "kannFliegen": false,
+        "magie": 48
+    },
+    "140": {
+        "id": 140,
+        "name": "\tDavide\t",
+        "element": "Wasser",
+        "kannFliegen": true,
+        "magie": 68
+    },
+    "155": {
+        "id": 155,
+        "name": "\tLiz\t",
+        "element": "Erde",
+        "kannFliegen": true,
+        "magie": 13
+    },
+    "168": {
+        "id": 168,
+        "name": "\tAyla\t",
+        "element": "Licht",
+        "kannFliegen": false,
+        "magie": 13
+    },
+    "182": {
+        "id": 182,
+        "name": "\tFine\t",
+        "element": "Erde",
+        "kannFliegen": false,
+        "magie": 81
+    },
+    "184": {
+        "id": 184,
+        "name": "\tMatteo\t",
+        "element": "Wasser",
+        "kannFliegen": true,
+        "magie": 35
+    },
+    "191": {
+        "id": 191,
+        "name": "\tTino\t",
+        "element": "Wasser",
+        "kannFliegen": true,
+        "magie": 58
+    },
+    "194": {
+        "id": 194,
+        "name": "\tNike\t",
+        "element": "Erde",
+        "kannFliegen": false,
+        "magie": 10
+    },
+    "195": {
+        "id": 195,
+        "name": "\tFabienne\t",
+        "element": "Erde",
+        "kannFliegen": true,
+        "magie": 18
+    },
     "2": {
         "id": 2,
         "name": "Test2",
         "element": "wasser",
         "kannFliegen": false,
         "magie": 12
+    },
+    "203": {
+        "id": 203,
+        "name": "\tSilas\t",
+        "element": "Dunkel",
+        "kannFliegen": false,
+        "magie": 21
+    },
+    "216": {
+        "id": 216,
+        "name": "\tKerim\t",
+        "element": "Licht",
+        "kannFliegen": false,
+        "magie": 60
+    },
+    "275": {
+        "id": 275,
+        "name": "\tMadeleine\t",
+        "element": "Erde",
+        "kannFliegen": false,
+        "magie": 85
+    },
+    "276": {
+        "id": 276,
+        "name": "\tAlbert\t",
+        "element": "Luft",
+        "kannFliegen": true,
+        "magie": 6
+    },
+    "287": {
+        "id": 287,
+        "name": "\tDustin\t",
+        "element": "Feuer",
+        "kannFliegen": true,
+        "magie": 93
     },
     "3": {
         "id": 3,
@@ -27,19 +146,383 @@
         "kannFliegen": true,
         "magie": 12
     },
-    "356": {
-        "id": 356,
-        "name": "\tPierre\t",
+    "306": {
+        "id": 306,
+        "name": "\tHedi\t",
+        "element": "Wasser",
+        "kannFliegen": false,
+        "magie": 57
+    },
+    "312": {
+        "id": 312,
+        "name": "\tAdriana\t",
+        "element": "Dunkel",
+        "kannFliegen": true,
+        "magie": 49
+    },
+    "315": {
+        "id": 315,
+        "name": "\tArne\t",
+        "element": "Erde",
+        "kannFliegen": true,
+        "magie": 45
+    },
+    "320": {
+        "id": 320,
+        "name": "\tAnnabell\t",
+        "element": "Feuer",
+        "kannFliegen": false,
+        "magie": 100
+    },
+    "323": {
+        "id": 323,
+        "name": "\tTitus\t",
+        "element": "Dunkel",
+        "kannFliegen": false,
+        "magie": 62
+    },
+    "338": {
+        "id": 338,
+        "name": "\tLilith\t",
+        "element": "Feuer",
+        "kannFliegen": false,
+        "magie": 47
+    },
+    "343": {
+        "id": 343,
+        "name": "\tKuzey\t",
         "element": "Erde",
         "kannFliegen": false,
+        "magie": 56
+    },
+    "356": {
+        "id": 356,
+        "name": "\tQuentin\t",
+        "element": "Luft",
+        "kannFliegen": false,
+        "magie": 75
+    },
+    "372": {
+        "id": 372,
+        "name": "\tJule\t",
+        "element": "Erde",
+        "kannFliegen": true,
+        "magie": 100
+    },
+    "378": {
+        "id": 378,
+        "name": "\tThilo\t",
+        "element": "Licht",
+        "kannFliegen": false,
+        "magie": 21
+    },
+    "382": {
+        "id": 382,
+        "name": "\tLilian\t",
+        "element": "Luft",
+        "kannFliegen": false,
+        "magie": 93
+    },
+    "400": {
+        "id": 400,
+        "name": "\tHeidi\t",
+        "element": "Licht",
+        "kannFliegen": false,
+        "magie": 86
+    },
+    "401": {
+        "id": 401,
+        "name": "\tDamien\t",
+        "element": "Feuer",
+        "kannFliegen": false,
+        "magie": 23
+    },
+    "402": {
+        "id": 402,
+        "name": "\tAlessa\t",
+        "element": "Dunkel",
+        "kannFliegen": true,
         "magie": 43
+    },
+    "421": {
+        "id": 421,
+        "name": "\tLucien\t",
+        "element": "Luft",
+        "kannFliegen": false,
+        "magie": 68
+    },
+    "43": {
+        "id": 43,
+        "name": "\tBen\t",
+        "element": "Luft",
+        "kannFliegen": false,
+        "magie": 95
+    },
+    "437": {
+        "id": 437,
+        "name": "\tCeylin\t",
+        "element": "Erde",
+        "kannFliegen": true,
+        "magie": 1
+    },
+    "44": {
+        "id": 44,
+        "name": "\tMaren\t",
+        "element": "Licht",
+        "kannFliegen": false,
+        "magie": 59
+    },
+    "446": {
+        "id": 446,
+        "name": "\tAdriana\t",
+        "element": "Licht",
+        "kannFliegen": false,
+        "magie": 73
+    },
+    "448": {
+        "id": 448,
+        "name": "\tFelia\t",
+        "element": "Luft",
+        "kannFliegen": true,
+        "magie": 49
+    },
+    "460": {
+        "id": 460,
+        "name": "\tLeonardo\t",
+        "element": "Wasser",
+        "kannFliegen": true,
+        "magie": 45
+    },
+    "501": {
+        "id": 501,
+        "name": "\tLuisa\t",
+        "element": "Feuer",
+        "kannFliegen": true,
+        "magie": 89
+    },
+    "504": {
+        "id": 504,
+        "name": "\tFanny\t",
+        "element": "Erde",
+        "kannFliegen": true,
+        "magie": 58
+    },
+    "535": {
+        "id": 535,
+        "name": "\tKaan\t",
+        "element": "Luft",
+        "kannFliegen": true,
+        "magie": 24
+    },
+    "536": {
+        "id": 536,
+        "name": "\tJonte\t",
+        "element": "Licht",
+        "kannFliegen": true,
+        "magie": 40
+    },
+    "547": {
+        "id": 547,
+        "name": "\tRuben\t",
+        "element": "Feuer",
+        "kannFliegen": true,
+        "magie": 10
+    },
+    "56": {
+        "id": 56,
+        "name": "\tMary\t",
+        "element": "Wasser",
+        "kannFliegen": false,
+        "magie": 80
+    },
+    "564": {
+        "id": 564,
+        "name": "\tLeif\t",
+        "element": "Feuer",
+        "kannFliegen": true,
+        "magie": 78
+    },
+    "571": {
+        "id": 571,
+        "name": "\tMehmet\t",
+        "element": "Erde",
+        "kannFliegen": true,
+        "magie": 97
+    },
+    "578": {
+        "id": 578,
+        "name": "\tMiran\t",
+        "element": "Feuer",
+        "kannFliegen": true,
+        "magie": 29
+    },
+    "587": {
+        "id": 587,
+        "name": "\tJennifer\t",
+        "element": "Feuer",
+        "kannFliegen": true,
+        "magie": 57
+    },
+    "599": {
+        "id": 599,
+        "name": "\tJamie\t",
+        "element": "Wasser",
+        "kannFliegen": true,
+        "magie": 77
+    },
+    "602": {
+        "id": 602,
+        "name": "\tSummer\t",
+        "element": "Feuer",
+        "kannFliegen": true,
+        "magie": 3
+    },
+    "604": {
+        "id": 604,
+        "name": "\tJuna\t",
+        "element": "Erde",
+        "kannFliegen": false,
+        "magie": 33
+    },
+    "619": {
+        "id": 619,
+        "name": "\tBenedikt\t",
+        "element": "Feuer",
+        "kannFliegen": false,
+        "magie": 22
+    },
+    "621": {
+        "id": 621,
+        "name": "\tMartin\t",
+        "element": "Dunkel",
+        "kannFliegen": true,
+        "magie": 98
+    },
+    "64": {
+        "id": 64,
+        "name": "\tAva\t",
+        "element": "Feuer",
+        "kannFliegen": true,
+        "magie": 82
+    },
+    "640": {
+        "id": 640,
+        "name": "\tBatuhan\t",
+        "element": "Licht",
+        "kannFliegen": true,
+        "magie": 98
+    },
+    "641": {
+        "id": 641,
+        "name": "\tVerena\t",
+        "element": "Wasser",
+        "kannFliegen": true,
+        "magie": 85
     },
     "647": {
         "id": 647,
-        "name": "\tMiguel\t",
+        "name": "\tAriana\t",
+        "element": "Dunkel",
+        "kannFliegen": false,
+        "magie": 84
+    },
+    "649": {
+        "id": 649,
+        "name": "\tNina\t",
+        "element": "Wasser",
+        "kannFliegen": true,
+        "magie": 25
+    },
+    "65": {
+        "id": 65,
+        "name": "\tWiebke\t",
+        "element": "Wasser",
+        "kannFliegen": true,
+        "magie": 98
+    },
+    "668": {
+        "id": 668,
+        "name": "\tHelene\t",
+        "element": "Licht",
+        "kannFliegen": true,
+        "magie": 63
+    },
+    "679": {
+        "id": 679,
+        "name": "\tLavin\t",
+        "element": "Dunkel",
+        "kannFliegen": false,
+        "magie": 82
+    },
+    "698": {
+        "id": 698,
+        "name": "\tElanur\t",
+        "element": "Wasser",
+        "kannFliegen": true,
+        "magie": 37
+    },
+    "708": {
+        "id": 708,
+        "name": "\tMelek\t",
+        "element": "Wasser",
+        "kannFliegen": false,
+        "magie": 52
+    },
+    "721": {
+        "id": 721,
+        "name": "\tMatthias\t",
+        "element": "Licht",
+        "kannFliegen": true,
+        "magie": 18
+    },
+    "723": {
+        "id": 723,
+        "name": "\tJason\t",
+        "element": "Feuer",
+        "kannFliegen": false,
+        "magie": 7
+    },
+    "726": {
+        "id": 726,
+        "name": "\tMalte\t",
+        "element": "Feuer",
+        "kannFliegen": false,
+        "magie": 75
+    },
+    "727": {
+        "id": 727,
+        "name": "\tLeonie\t",
+        "element": "Licht",
+        "kannFliegen": false,
+        "magie": 34
+    },
+    "737": {
+        "id": 737,
+        "name": "\tLinus\t",
+        "element": "Wasser",
+        "kannFliegen": false,
+        "magie": 26
+    },
+    "752": {
+        "id": 752,
+        "name": "\tJenna\t",
+        "element": "Feuer",
+        "kannFliegen": false,
+        "magie": 19
+    },
+    "768": {
+        "id": 768,
+        "name": "\tDario\t",
         "element": "Luft",
         "kannFliegen": false,
-        "magie": 42
+        "magie": 86
+    },
+    "770": {
+        "id": 770,
+        "name": "\tHanno\t",
+        "element": "Luft",
+        "kannFliegen": true,
+        "magie": 90
     },
     "781": {
         "id": 781,
@@ -48,11 +531,214 @@
         "kannFliegen": true,
         "magie": 12
     },
+    "788": {
+        "id": 788,
+        "name": "\tMia\t",
+        "element": "Luft",
+        "kannFliegen": false,
+        "magie": 95
+    },
+    "791": {
+        "id": 791,
+        "name": "\tRick\t",
+        "element": "Feuer",
+        "kannFliegen": true,
+        "magie": 40
+    },
+    "792": {
+        "id": 792,
+        "name": "\tMarlo\t",
+        "element": "Wasser",
+        "kannFliegen": false,
+        "magie": 2
+    },
+    "797": {
+        "id": 797,
+        "name": "\tJana\t",
+        "element": "Wasser",
+        "kannFliegen": true,
+        "magie": 37
+    },
+    "807": {
+        "id": 807,
+        "name": "\tAlbert\t",
+        "element": "Feuer",
+        "kannFliegen": false,
+        "magie": 32
+    },
+    "812": {
+        "id": 812,
+        "name": "\tMary\t",
+        "element": "Dunkel",
+        "kannFliegen": false,
+        "magie": 29
+    },
+    "819": {
+        "id": 819,
+        "name": "\tChiara\t",
+        "element": "Luft",
+        "kannFliegen": false,
+        "magie": 43
+    },
+    "82": {
+        "id": 82,
+        "name": "\tMatteo\t",
+        "element": "Feuer",
+        "kannFliegen": false,
+        "magie": 62
+    },
+    "820": {
+        "id": 820,
+        "name": "\tLucian\t",
+        "element": "Feuer",
+        "kannFliegen": true,
+        "magie": 47
+    },
+    "824": {
+        "id": 824,
+        "name": "\tLino\t",
+        "element": "Feuer",
+        "kannFliegen": true,
+        "magie": 94
+    },
+    "837": {
+        "id": 837,
+        "name": "\tFrederik\t",
+        "element": "Wasser",
+        "kannFliegen": true,
+        "magie": 38
+    },
+    "841": {
+        "id": 841,
+        "name": "\tFriedrich\t",
+        "element": "Luft",
+        "kannFliegen": false,
+        "magie": 91
+    },
+    "854": {
+        "id": 854,
+        "name": "\tAlice\t",
+        "element": "Licht",
+        "kannFliegen": true,
+        "magie": 26
+    },
+    "874": {
+        "id": 874,
+        "name": "\tDevin\t",
+        "element": "Wasser",
+        "kannFliegen": false,
+        "magie": 8
+    },
+    "878": {
+        "id": 878,
+        "name": "\tRoman\t",
+        "element": "Wasser",
+        "kannFliegen": false,
+        "magie": 79
+    },
+    "884": {
+        "id": 884,
+        "name": "\tMilo\t",
+        "element": "Wasser",
+        "kannFliegen": false,
+        "magie": 10
+    },
+    "90": {
+        "id": 90,
+        "name": "\tNora\t",
+        "element": "Licht",
+        "kannFliegen": false,
+        "magie": 7
+    },
+    "904": {
+        "id": 904,
+        "name": "\tLeandra\t",
+        "element": "Wasser",
+        "kannFliegen": false,
+        "magie": 47
+    },
+    "912": {
+        "id": 912,
+        "name": "\tDenny\t",
+        "element": "Licht",
+        "kannFliegen": true,
+        "magie": 62
+    },
+    "919": {
+        "id": 919,
+        "name": "\tNick\t",
+        "element": "Feuer",
+        "kannFliegen": false,
+        "magie": 7
+    },
+    "932": {
+        "id": 932,
+        "name": "\tDana\t",
+        "element": "Luft",
+        "kannFliegen": true,
+        "magie": 6
+    },
+    "939": {
+        "id": 939,
+        "name": "\tNaomi\t",
+        "element": "Luft",
+        "kannFliegen": false,
+        "magie": 79
+    },
+    "96": {
+        "id": 96,
+        "name": "\tLuisa\t",
+        "element": "Luft",
+        "kannFliegen": true,
+        "magie": 18
+    },
+    "966": {
+        "id": 966,
+        "name": "\tSidney\t",
+        "element": "Feuer",
+        "kannFliegen": true,
+        "magie": 21
+    },
     "971": {
         "id": 971,
         "name": "\tMila\t",
         "element": "Wasser",
         "kannFliegen": false,
         "magie": 0
+    },
+    "972": {
+        "id": 972,
+        "name": "\tMaileen\t",
+        "element": "Licht",
+        "kannFliegen": true,
+        "magie": 1
+    },
+    "975": {
+        "id": 975,
+        "name": "\tSantino\t",
+        "element": "Erde",
+        "kannFliegen": false,
+        "magie": 30
+    },
+    "98": {
+        "id": 98,
+        "name": "\tEdwin\t",
+        "element": "Luft",
+        "kannFliegen": true,
+        "magie": 4
+    },
+    "99": {
+        "id": 99,
+        "name": "\tMio\t",
+        "element": "Dunkel",
+        "kannFliegen": false,
+        "magie": 87
+    },
+    "997": {
+        "id": 997,
+        "name": "\tAmilia\t",
+        "element": "Licht",
+        "kannFliegen": true,
+        "magie": 41
     }
 }

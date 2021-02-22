@@ -27,7 +27,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	storage.AddNewRndHero(5)
+	//storage.AddNewRndHero(100) um Helden zu erstellen, falls die storage.json comprumitiert ist
 	app := fiber.New()
 
 	app.Get("/api/file", func(c *fiber.Ctx) error {
